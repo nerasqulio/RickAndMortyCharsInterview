@@ -1,6 +1,5 @@
-package com.example.rickandmortychars
+package Networking
 
-import com.squareup.moshi.Json
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import retrofit2.Retrofit
@@ -14,7 +13,7 @@ object Networking {
         .baseUrl("https://rickandmortyapi.com/api/")
         .addConverterFactory(MoshiConverterFactory.create(moshi))
         .build()
-    val RNMService : Service by lazy {rtFit.create(Service::class.java)}
+    val RNMService : Service by lazy { rtFit.create(Service::class.java)}
     val apiclient = Client(RNMService)
 
 }

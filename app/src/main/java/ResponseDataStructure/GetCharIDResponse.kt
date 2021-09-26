@@ -1,4 +1,4 @@
-package com.example.rickandmortychars
+package ResponseDataStructure
 
 import java.io.Serializable
 

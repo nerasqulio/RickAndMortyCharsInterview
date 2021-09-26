@@ -1,5 +1,6 @@
-package com.example.rickandmortychars
+package Activities
 
+import Networking.Model
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -11,6 +12,7 @@ import androidx.appcompat.widget.AppCompatTextView
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.iterator
 import androidx.lifecycle.ViewModelProvider
+import com.example.rickandmortychars.R
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.*
 import java.io.Serializable
@@ -35,12 +37,11 @@ class ListActivity : AppCompatActivity() {
         viewModel.charByPageLive.observe(this)
         { response ->
             if (response == null) {
-                //Log.d("ListActivity: ","Msg: "+response)
+
                 Toast.makeText(
                     this@ListActivity, "Network Error!! Check your internet connection!",
                     Toast.LENGTH_SHORT
                 ).show()
-
 
                 return@observe
             }
@@ -64,7 +65,6 @@ class ListActivity : AppCompatActivity() {
                     intent = Intent(this, MainActivity::class.java).apply {
                         putExtra("ID", "" + (i.index+1))
                         putExtra("object",response[(i.index)] as Serializable)
-                           // Log.d("ListActivity: ", "Clicked " + imageCounter)
                     }
                         startActivity(intent)
                     }

@@ -1,5 +1,7 @@
-package com.example.rickandmortychars
+package Activities
 
+import Networking.Model
+import ResponseDataStructure.GetCharIDResponse
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +9,7 @@ import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.AppCompatTextView
 import androidx.lifecycle.ViewModelProvider
+import com.example.rickandmortychars.R
 
 import com.squareup.picasso.Picasso
 
@@ -40,7 +43,7 @@ class MainActivity : AppCompatActivity() {
         val button = findViewById<AppCompatButton>(R.id.button)
 
         button.setOnClickListener {
-            val intent = Intent(this,ListActivity::class.java)
+            val intent = Intent(this, ListActivity::class.java)
             startActivity(intent)
         }
 

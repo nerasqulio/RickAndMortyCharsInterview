@@ -1,6 +1,7 @@
-package com.example.rickandmortychars
+package Networking
 
-import retrofit2.Call
+
+import ResponseDataStructure.GetCharIDResponse
 import retrofit2.Response
 
 class Client(val RNMService : Service)

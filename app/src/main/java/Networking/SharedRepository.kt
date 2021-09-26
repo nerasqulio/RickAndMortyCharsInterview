@@ -1,4 +1,6 @@
-package com.example.rickandmortychars
+package Networking
+
+import ResponseDataStructure.GetCharIDResponse
 
 class SharedRepository {
 

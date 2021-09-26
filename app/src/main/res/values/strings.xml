@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">RickAndMortyChars</string>
+    <string name="nameCh">Name :</string>
+    <string name="statusCh">Status :</string>
+    <string name="locationCh">Location :</string>
+    <string name="todo">TODO</string>
+</resources>

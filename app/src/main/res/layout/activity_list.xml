@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF5722"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="vertical">
+
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char1"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_marginTop="32dp"
+                android:contentDescription="@string/todo"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char1" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char2"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="@+id/char1"
+                app:layout_constraintStart_toStartOf="@+id/char1"
+                app:layout_constraintTop_toBottomOf="@+id/char1"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char2" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char3"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char2"
+                app:layout_constraintStart_toStartOf="@+id/char2"
+                app:layout_constraintTop_toBottomOf="@+id/char2"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char3"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char4"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="@+id/char3"
+                app:layout_constraintStart_toStartOf="@+id/char3"
+                app:layout_constraintTop_toBottomOf="@+id/char3"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char4"
+                tools:ignore="DuplicateIds" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char5"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char4"
+                app:layout_constraintStart_toStartOf="@+id/char4"
+                app:layout_constraintTop_toBottomOf="@+id/char4"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char5"
+                tools:ignore="DuplicateIds" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char6"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char5"
+                app:layout_constraintStart_toStartOf="@+id/char5"
+                app:layout_constraintTop_toBottomOf="@+id/char5"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char6"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char7"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_marginTop="204dp"
+                android:contentDescription="@string/todo"
+                app:layout_constraintEnd_toEndOf="@+id/char6"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/char6"
+                app:layout_constraintTop_toTopOf="@+id/char6"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char7" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char8"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="@+id/char7"
+                app:layout_constraintStart_toStartOf="@+id/char7"
+                app:layout_constraintTop_toBottomOf="@+id/char7"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char8" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char9"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char8"
+                app:layout_constraintStart_toStartOf="@+id/char8"
+                app:layout_constraintTop_toBottomOf="@+id/char8"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char9"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char10"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="@+id/char9"
+                app:layout_constraintStart_toStartOf="@+id/char9"
+                app:layout_constraintTop_toBottomOf="@+id/char9"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char10"
+                tools:ignore="DuplicateIds" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char11"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char10"
+                app:layout_constraintStart_toStartOf="@+id/char10"
+                app:layout_constraintTop_toBottomOf="@+id/char10"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char11"
+                tools:ignore="DuplicateIds" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char12"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char11"
+                app:layout_constraintStart_toStartOf="@+id/char11"
+                app:layout_constraintTop_toBottomOf="@+id/char11"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char12"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char13"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_marginTop="208dp"
+                android:contentDescription="@string/todo"
+                app:layout_constraintEnd_toEndOf="@+id/char12"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/char12"
+                app:layout_constraintTop_toTopOf="@+id/char12"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char13" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char14"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="@+id/char13"
+                app:layout_constraintStart_toStartOf="@+id/char13"
+                app:layout_constraintTop_toBottomOf="@+id/char13"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char14" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char15"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char14"
+                app:layout_constraintStart_toStartOf="@+id/char14"
+                app:layout_constraintTop_toBottomOf="@+id/char14"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char15"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char16"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="@+id/char15"
+                app:layout_constraintStart_toStartOf="@+id/char15"
+                app:layout_constraintTop_toBottomOf="@+id/char15"
+                tools:srcCompat="@tools:sample/avatars" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char16"
+                tools:ignore="DuplicateIds" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char17"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char16"
+                app:layout_constraintStart_toStartOf="@+id/char16"
+                app:layout_constraintTop_toBottomOf="@+id/char16"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char17"
+                tools:ignore="DuplicateIds" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char18"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="@+id/char17"
+                app:layout_constraintStart_toStartOf="@+id/char17"
+                app:layout_constraintTop_toBottomOf="@+id/char17"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char18"
+                tools:ignore="DuplicateIds" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char19"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_marginTop="204dp"
+                android:contentDescription="@string/todo"
+                app:layout_constraintEnd_toEndOf="@+id/char18"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/char18"
+                app:layout_constraintTop_toTopOf="@+id/char18"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char19" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/char20"
+                android:layout_width="158dp"
+                android:layout_height="173dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="32dp"
+                android:contentDescription="TODO"
+                app:layout_constraintEnd_toEndOf="@+id/char19"
+                app:layout_constraintStart_toStartOf="@+id/char19"
+                app:layout_constraintTop_toBottomOf="@+id/char19"
+                tools:srcCompat="@tools:sample/avatars" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/charName20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginEnd="177dp"
+                android:textColor="#212121"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/char20" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+</RelativeLayout>

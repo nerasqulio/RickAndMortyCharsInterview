@@ -15,7 +15,10 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.rickandmortychars.R
 import com.squareup.picasso.Picasso
 import kotlinx.coroutines.*
+import java.io.IOException
 import java.io.Serializable
+import java.net.InetSocketAddress
+import java.net.Socket
 
 import kotlin.collections.mutableListOf as mutableListOf
 
@@ -27,6 +30,8 @@ class ListActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
+
+        var hasRunOnce : Boolean = false
         var intent : Intent
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_list)
@@ -74,6 +79,7 @@ class ListActivity : AppCompatActivity() {
             }
         }
     }
+
 
 
 }

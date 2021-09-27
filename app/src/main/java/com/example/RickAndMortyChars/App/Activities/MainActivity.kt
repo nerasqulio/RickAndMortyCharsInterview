@@ -44,6 +44,9 @@ class MainActivity : AppCompatActivity() {
 
         button.setOnClickListener {
             val intent = Intent(this, ListActivity::class.java)
+            finish()
+                intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP )
+                intent.setFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
             startActivity(intent)
         }
 

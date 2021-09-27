@@ -1,6 +1,6 @@
-package Networking
+package com.example.RickAndMortyChars.App.Networking
 
-import ResponseDataStructure.GetCharIDResponse
+import com.example.RickAndMortyChars.App.ResponseDataStructure.GetCharIDResponse
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Path

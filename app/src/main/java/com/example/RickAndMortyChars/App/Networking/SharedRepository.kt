@@ -1,6 +1,7 @@
-package Networking
+package com.example.RickAndMortyChars.App.Networking
 
-import ResponseDataStructure.GetCharIDResponse
+import com.example.RickAndMortyChars.App.ResponseDataStructure.GetCharIDResponse
+import java.io.IOException
 
 class SharedRepository {
 
@@ -11,6 +12,7 @@ class SharedRepository {
         val request2 = Networking.apiclient.getCharByPage(charID)
         if(!request2.isSuccessful)
         {
+
             return null
         }
         else

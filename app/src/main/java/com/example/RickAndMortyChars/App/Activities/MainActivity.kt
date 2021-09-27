@@ -1,7 +1,7 @@
-package Activities
+package com.example.RickAndMortyChars.App.Activities
 
-import Networking.Model
-import ResponseDataStructure.GetCharIDResponse
+import com.example.RickAndMortyChars.App.Networking.Model
+import com.example.RickAndMortyChars.App.ResponseDataStructure.GetCharIDResponse
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

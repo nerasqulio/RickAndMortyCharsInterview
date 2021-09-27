@@ -1,4 +1,4 @@
-package Networking
+package com.example.RickAndMortyChars.App.Networking
 
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory

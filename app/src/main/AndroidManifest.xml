@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.rickandmortychars">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
@@ -11,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RickAndMortyChars">
         <activity
-            android:name="Activities.ListActivity"
+            android:name="com.example.RickAndMortyChars.App.Activities.ListActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -21,7 +23,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="Activities.MainActivity"
+        <activity android:name="com.example.RickAndMortyChars.App.Activities.MainActivity"
             android:exported="true"
             android:screenOrientation="portrait">
             <intent-filter>

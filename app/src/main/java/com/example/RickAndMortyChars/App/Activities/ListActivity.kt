@@ -1,6 +1,6 @@
-package Activities
+package com.example.RickAndMortyChars.App.Activities
 
-import Networking.Model
+import com.example.RickAndMortyChars.App.Networking.Model
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -32,6 +32,8 @@ class ListActivity : AppCompatActivity() {
         setContentView(R.layout.activity_list)
 
         val numbers = IntArray(20) {(it + 1)}
+
+
 
         viewModel.updateCharPage(""+numbers.contentToString())
         viewModel.charByPageLive.observe(this)
@@ -72,5 +74,6 @@ class ListActivity : AppCompatActivity() {
             }
         }
     }
+
 
 }

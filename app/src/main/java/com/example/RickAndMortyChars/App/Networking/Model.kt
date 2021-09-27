@@ -1,7 +1,6 @@
-package Networking
+package com.example.RickAndMortyChars.App.Networking
 
-import Networking.SharedRepository
-import ResponseDataStructure.GetCharIDResponse
+import com.example.RickAndMortyChars.App.ResponseDataStructure.GetCharIDResponse
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel

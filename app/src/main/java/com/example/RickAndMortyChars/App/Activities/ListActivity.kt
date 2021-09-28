@@ -43,6 +43,7 @@ class ListActivity : AppCompatActivity() {
         viewModel.updateCharPage(""+numbers.contentToString())
         viewModel.charByPageLive.observe(this)
         { response ->
+
             if (response == null) {
 
                 Toast.makeText(
@@ -70,7 +71,7 @@ class ListActivity : AppCompatActivity() {
                 i.value.setOnClickListener()
                     {
                     intent = Intent(this, MainActivity::class.java).apply {
-                        putExtra("ID", "" + (i.index+1))
+
                         putExtra("object",response[(i.index)] as Serializable)
                     }
                         startActivity(intent)

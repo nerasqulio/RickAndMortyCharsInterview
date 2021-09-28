@@ -1,14 +1,26 @@
 package com.example.RickAndMortyChars.App.Networking
-
-
 import com.example.RickAndMortyChars.App.ResponseDataStructure.GetCharIDResponse
 import retrofit2.Response
 
+
 class Client(val RNMService : Service)
 {
+    suspend fun getCharByPage(charID : String) : HandledResponse<List<GetCharIDResponse>> {
 
 
-    suspend fun getCharByPage(charID : String) : Response<List<GetCharIDResponse>> {
-        return RNMService.getCharByPage(charID)
+        return  handleResponse{RNMService.getCharByPage(charID)}
+    }
+
+    inline fun <T> handleResponse (handle : () -> Response<T>) : HandledResponse<T>
+    {
+        return try{
+
+            HandledResponse.isSuccess(handle())
+
+        }catch (e : Exception)
+        {
+            return HandledResponse(null)
+        }
+
     }
 }

@@ -9,15 +9,14 @@ class SharedRepository {
 
     suspend fun getCharByPage(charID : String) : List<GetCharIDResponse>?
     {
-        val request2 = Networking.apiclient.getCharByPage(charID)
-        if(!request2.isSuccessful)
+        val request = Networking.apiclient.getCharByPage(charID)
+        if(request.check())
         {
-
             return null
         }
         else
         {
-            return request2.body()
+            return request.retBareResponse()
         }
     }
 

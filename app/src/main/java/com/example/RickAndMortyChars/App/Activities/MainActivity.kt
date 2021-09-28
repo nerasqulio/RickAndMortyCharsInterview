@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         val response : GetCharIDResponse = intent.getSerializableExtra("object") as GetCharIDResponse
-        val message : String = intent.getStringExtra("ID")!!
         super.onCreate(savedInstanceState)
 
         setContentView(R.layout.activity_main)
@@ -33,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         val statusVal = findViewById<AppCompatTextView>(R.id.statusVal)
         val locationVal = findViewById<AppCompatTextView>(R.id.locationVal)
         val charImage = findViewById<AppCompatImageView>(R.id.charImage)
-
 
         nameVal.text = response.name
         statusVal.text = response.status
